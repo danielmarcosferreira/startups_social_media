@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 
 const StartupCard = ({ post }: { post: StartupTypeCard }) => {
     const { _createdAt, views, author: { _id: authorId, name }, title, category, _id, image, description } = post;
+    
     return (
         <li className="startup-card group">
             <div className="flex-between">
