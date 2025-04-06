@@ -63,6 +63,37 @@
   .tag {
     @apply px-6 py-3 font-[var(--font-work-sans)] font-bold rounded-sm uppercase relative;
     background-color: #FBE843;
+    .tag-tri {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      border-top: 10px solid #000;
+      border-right: 10px solid transparent;
+    }
+    .tag-tri::after {
+      content: '';
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+      border-bottom: 10px solid #000;
+      border-left: 10px solid transparent;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      border-top: 10px solid #000;
+      border-right: 10px solid transparent;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+      border-bottom: 10px solid #000;
+      border-left: 10px solid transparent;
+    }
   }
 
   .heading {
@@ -219,12 +250,12 @@
 
   .view-text {
     @apply font-medium text-[16px] px-4 py-2 rounded-lg capitalize;
-    background-color: #EE2B69;
+    background-color: #FFE8F0;
   }
 
   .category-tag {
     @apply font-medium text-[16px] px-4 py-2 rounded-full;
-    background-color: #EE2B69;
+    background-color: #FFE8F0;
   }
 
   .tag-tri {
