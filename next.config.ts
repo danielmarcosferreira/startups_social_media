@@ -10,9 +10,9 @@ const nextConfig: NextConfig = {
       }
     ]
   },
-  // experimental: {
+  experimental: {
   //   ppr: true
-  // },
+  },
   devIndicators: {
     buildActivity: true,
     position: "bottom-right"
