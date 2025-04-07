@@ -6,7 +6,7 @@ import { Search } from 'lucide-react';
 const SearchForm = ({ query }: { query?: string }) => {
 
     return (
-        <Form action={"/"} scroll={false} className='search-form'>
+        <form action={"/"} method='GET' className='search-form'>
             <input
                 name='query'
                 defaultValue={query}
@@ -21,7 +21,7 @@ const SearchForm = ({ query }: { query?: string }) => {
                     <Search className='size-5'/>
                 </button>
             </div>
-        </Form>
+        </form>
     )
 }
 

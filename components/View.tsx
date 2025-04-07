@@ -14,6 +14,9 @@ const View = async ({ id }: { id: string }) => {
         .set({ views: totalViews + 1 })
         .commit());
 
+        console.log(totalViews);
+        
+
     return (
         <div className='view-container'>
             <div className='absolute -top-5 -right-5'>
@@ -21,7 +24,7 @@ const View = async ({ id }: { id: string }) => {
             </div>
 
             <p className='view-text'>
-                <span className='font-black'>{`${totalViews} ${totalViews.length > 0 ? "Views" : "View"}`}</span>
+                <span className='font-black'>{totalViews <= 1 ? `1 view` : `${totalViews} Views`}</span>
             </p>
         </div>
     )
